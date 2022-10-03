@@ -91,7 +91,12 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ![](image%2012.jpg)
 
-## Summary
+## Summary:
+- Overall, oversampling did not produce accurate and thrustworthy predictions.  Accuracy scores were below 70%. 
+- The quality of a positive prediction made by the Naive Random Sampling for "low risk" group is at an ideal level, 100%.  It means that most of its predicted instances are correct when compared to the training ones; however, at low accuracy.
+- 
+
+
 
 
 
