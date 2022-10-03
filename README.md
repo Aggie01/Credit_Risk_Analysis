@@ -51,9 +51,22 @@ IMAGE 4
 
  IMAGE 5
  
- - - Classification Report: very low precision for "high risk" (0.01).  Recall is also at low level (0.69).  This means that most of its predicted instances are incorrect when compared to the training data.  For "low risk", precision is at (1.0) and recall at a very low level (0.40). Such low recall level relates to high level of false negatives
+ - Classification Report: very low precision for "high risk" (0.01).  Recall is also at low level (0.69).  This means that most of its predicted instances are incorrect when compared to the training data.  For "low risk", precision is at (1.0) and recall at a very low level (0.40). Such low recall level relates to high level of false negatives
  
 IMAGE 6
+
+## Deliverable 2
+### Combination Sampling
+(it combines both sampling methods, over and under sampling. The minority group is oversampled but also each group's outliers are removed)
+- Calculated **Combination Sampling**accuracy_score is low (0.544). It means that the Combination Sampling is only 54%  accurate
+
+IMAGE 7
+
+- Classification Report: "high risk" precision is very low as compared to "low risk."  It means that there are many false positives in "high risk."  Recall is at low level for "low risk."  
+
+
+
+
 
 
 
