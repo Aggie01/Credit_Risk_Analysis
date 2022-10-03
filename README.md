@@ -78,6 +78,17 @@ IMAGE 9
 
 IMAGE 10 
 
+### AdaBoost Classifier:
+(it increases the weight of "weak" group)
+- Calculated **AdaBoost Classifier**accuracy_score is very high, 93%. 
+
+IMAGE 11
+
+- Classification Report: very high score for "low risk" for both, precision and recall.  High scores for both indicate that the classifier is returning accurate results (high precision), as well as it is returning a majority of all positive results (high recall).  For "high risk," there is high recall but low precision which means that most results that are returned are incorrect when compared to training set.
+
+IMAGE 12  
+
+
 
 
 
