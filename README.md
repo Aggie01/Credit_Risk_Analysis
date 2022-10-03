@@ -79,20 +79,17 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 - Classification Report: the results show the precision for "high risk" loans is very low, indicating a large number of false positives. Recall is at a moderate level which indicates that average number of false negatives. Overall, Random Forest is fine because its accuracy is at 79%.
 
-IMAGE 10 
 ![](image%2010.jpg)
 
 ### AdaBoost Classifier:
 (it increases the weight of "weak" group)
 - Calculated **AdaBoost Classifier**accuracy_score is very high, 93%. 
 
-IMAGE 11
-![](image%211.jpgg)
+![](image%2011.jpgg)
 
 - Classification Report: very high score for "low risk" for both, precision and recall.  High scores for both indicate that the classifier is returning accurate results (high precision), as well as it is returning a majority of all positive results (high recall).  For "high risk," there is high recall but low precision which means that most results that are returned are incorrect when compared to training set.
 
-IMAGE 12  
-![](image%212.jpg)
+![](image%2012.jpg)
 
 ## Summary
 
