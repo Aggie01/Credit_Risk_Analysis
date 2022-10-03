@@ -19,7 +19,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 - Data represents a loan application approval (high risk vs low risk)
 - High risk is greatly undersampled (N = 347) vs low risk (N = 684700)
 
-![](Candidates%20election%20results.png)
+![](image%200.jpg)
 
 - Data is separated into features(X) and target (y)
 - Data values are converted into numerical ones with pd.get_dummies()
