@@ -32,7 +32,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 - Calculated accuracy_score is low (0.662) which means that the **Naive Random Oversampler** has only 66% accuracy.  To be considered good enough at predicting it should be at least 70% or higher.
 
 IMAGE 1
-![](Candidates%20election%20results.png)
+![](image%201.jpg)
 
 - Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.72).  This means that there is a good amount of false positives (most of its predicted values are incorrect).  For "low risk", precision is very high (1.0) and recall is 0.60. This high precision score indicates that the model returns accurate results but only at 66% accuracy (accuracy_score).
 
