@@ -97,7 +97,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 - SMOTE oversampler produced low scores for "high risk" in both, precision and recall. It implies a poor prediction.
 - Overall, undersampling generated low acceptance score, below 70%. Also, low overall recall shows high level of false negatives.
 - Combination Sampling shows very poor accuracy, only 54%.
-- Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall which means that the AdaBoost seems to be the best fitted at predicting accurate results.
+- Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall.  For that reason it is recommended that AdaBoost is applied as it is successful at producing the most accurate results.
 - 
 - 
 
