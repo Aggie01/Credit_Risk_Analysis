@@ -43,7 +43,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ![](image%203.jpg)
 
-- Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.61).  This means that there is a good amount of predicted values that are incorrect).  For "low risk", precision is ideal at (1.0) and recall is 0.70. High scores for both show that the model is returning accurate results; however, with quite low accuracy_score of 66%.
+- Classification Report: for "high risk" precision is very low (0.01) and recall is low as well (0.61).  This means that there is a good amount of predicted values that are incorrect).  For "low risk", precision is ideal at (1.0) and recall is at acceptable level of 0.70. High scores for both show that the model is returning accurate results; however, with quite low accuracy_score of 66%.
 
 ![](image%204.jpg)
 
@@ -94,6 +94,11 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Summary:
 - Overall, oversampling did not produce accurate and thrustworthy predictions.  Accuracy scores were below 70%. 
 - The quality of a positive prediction made by the Naive Random Sampling for "low risk" group is at an ideal level, 100%.  It means that most of its predicted instances are correct when compared to the training ones; however, at low accuracy.
+- SMOTE oversampler produced low scores for "high risk" in both, precision and recall. It implies a poor prediction.
+- Overall, undersampling generated low acceptance score, below 70%. Also, low overall recall shows high level of false negatives.
+- Combination Sampling shows very poor accuracy, only 54%.
+- Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall which means that the AdaBoost seems to be the best fitted at predicting accurate results.
+- 
 - 
 
 
