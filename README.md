@@ -31,24 +31,20 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 (instances are randomly selected and added to the minority class)
 - Calculated accuracy_score is low (0.662) which means that the **Naive Random Oversampler** has only 66% accuracy.  To be considered good enough at predicting it should be at least 70% or higher.
 
-IMAGE 1
 ![](image%201.jpg)
 
 - Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.72).  This means that there is a good amount of false positives (most of its predicted values are incorrect).  For "low risk", precision is very high (1.0) and recall is 0.60. This high precision score indicates that the model returns accurate results but only at 66% accuracy (accuracy_score).
 
-IMAGE 2 
 ![](image%202.jpg)
 
 ### SMOTE: 
 (for an instance from the minority group, a number of its closest neighors is selected to create new instances)
 - Calculated **SMOTE**accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy.
 
-IMAGE 3
 ![](image%203.jpg)
 
 - Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.61).  This means that there is a good amount of predicted values that are incorrect).  For "low risk", precision is ideal at (1.0) and recall is 0.70. High scores for both show that the model is returning accurate results; however, with quite low accuracy_score of 66%.
 
-IMAGE 4
 ![](image%204.jpg)
 
 ## Undersampling
@@ -56,12 +52,10 @@ IMAGE 4
 (the opposite approach of oversampling. The majority class is undersampled down to the size of the minority)
 - Calculated **Cluster Centroids**accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy
 
- IMAGE 5
  ![](image%205.jpg)
  
  - Classification Report: very low precision for "high risk" (0.01).  Recall is also at low level (0.69).  This means that most of its predicted instances are incorrect when compared to the training data.  For "low risk", precision is at (1.0) and recall at a very low level (0.40). Such low recall level relates to high level of false negatives
  
-IMAGE 6
 ![](image%206.jpg)
 
 ## Deliverable 2
@@ -69,12 +63,10 @@ IMAGE 6
 (it combines both sampling methods, over and under sampling. The minority group is oversampled but also each group's outliers are removed)
 - Calculated **Combination Sampling**accuracy_score is low (0.544). It means that the Combination Sampling is only 54%  accurate
 
-IMAGE 7
 ![](image%207.jpg)
 
 - Classification Report: "high risk" precision is very low as compared to "low risk."  It means that there are many false positives in "high risk."  Recall is at low level for "low risk."  
 
-IMAGE 8
 ![](image%208.jpg)
 
 ## Deliverable 3
@@ -83,13 +75,12 @@ IMAGE 8
 (builds random subset of features)
 - Calculated **Random Forest Classifier**accuracy_score is quite high (0.788). It means that the Balanced Random Forest Classifier is 79% accurate
 
-IMAGE 9
 ![](image%209.jpg)
 
 - Classification Report: the results show the precision for "high risk" loans is very low, indicating a large number of false positives. Recall is at a moderate level which indicates that average number of false negatives. Overall, Random Forest is fine because its accuracy is at 79%.
 
 IMAGE 10 
-![](image%210.jpg)
+![](image%2010.jpg)
 
 ### AdaBoost Classifier:
 (it increases the weight of "weak" group)
