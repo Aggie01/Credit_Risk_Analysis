@@ -64,6 +64,23 @@ IMAGE 7
 
 - Classification Report: "high risk" precision is very low as compared to "low risk."  It means that there are many false positives in "high risk."  Recall is at low level for "low risk."  
 
+IMAGE 8
+
+## Deliverable 3
+##  Ensemble Learners
+### Balanced Random Forest Classifier:
+(builds random subset of features)
+- Calculated **Random Forest Classifier**accuracy_score is quite high (0.788). It means that the Balanced Random Forest Classifier is 79% accurate
+
+IMAGE 9
+
+- Classification Report: the results show the precision for "high risk" loans is very low, indicating a large number of false positives. Recall is at a moderate level which indicates that average number of false negatives. Overall, Random Forest is fine because its accuracy is at 79%.
+
+IMAGE 10 
+
+
+
+
 
 
 
