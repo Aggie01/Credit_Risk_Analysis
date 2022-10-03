@@ -45,5 +45,15 @@ IMAGE 3
 IMAGE 4
 
 ## Undersampling
-### Cluster Centroids 
-(the opposite approach of oversampling)
+### Cluster Centroids: 
+(the opposite approach of oversampling. The majority class is undersampled down to the size of the minority)
+- Calculated **Cluster Centroids**accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy
+
+ IMAGE 5
+ 
+ - - Classification Report: very low precision for "high risk" (0.01).  Recall is also at low level (0.69).  This means that most of its predicted instances are incorrect when compared to the training data.  For "low risk", precision is at (1.0) and recall at a very low level (0.40). Such low recall level relates to high level of false negatives
+ 
+IMAGE 6
+
+
+
