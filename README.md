@@ -39,7 +39,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ### SMOTE: 
 (for an instance from the minority group, a number of its closest neighors is selected to create new instances)
-- Calculated **SMOTE**accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy.
+- Calculated **SMOTE** accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy.
 
 ![](image%203.jpg)
 
@@ -50,7 +50,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Undersampling
 ### Cluster Centroids: 
 (the opposite approach of oversampling. The majority class is undersampled down to the size of the minority)
-- Calculated **Cluster Centroids**accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy
+- Calculated **Cluster Centroids** accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy
 
  ![](image%205.jpg)
  
@@ -61,7 +61,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Deliverable 2
 ### Combination Sampling
 (it combines both sampling methods, over and under sampling. The minority group is oversampled but also each group's outliers are removed)
-- Calculated **Combination Sampling**accuracy_score is low (0.544). It means that the Combination Sampling is only 54%  accurate
+- Calculated **Combination Sampling** accuracy_score is low (0.544). It means that the Combination Sampling is only 54%  accurate
 
 ![](image%207.jpg)
 
@@ -73,7 +73,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ##  Ensemble Learners
 ### Balanced Random Forest Classifier:
 (builds random subset of features)
-- Calculated **Random Forest Classifier**accuracy_score is quite high (0.788). It means that the Balanced Random Forest Classifier is 79% accurate
+- Calculated **Random Forest Classifier** accuracy_score is quite high (0.788). It means that the Balanced Random Forest Classifier is 79% accurate
 
 ![](image%209.jpg)
 
@@ -83,7 +83,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ### AdaBoost Classifier:
 (it increases the weight of "weak" group)
-- Calculated **AdaBoost Classifier**accuracy_score is very high, 93%. 
+- Calculated **AdaBoost Classifier** accuracy_score is very high, 93%. 
 
 ![](/image%2011.jpg)
 
