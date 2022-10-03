@@ -9,11 +9,12 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Methodology:
 ### Tools used:
 - Naive Random Oversampler
-- SMOTE
+- SMOTE Oversampler
+- Cluster Centroids Undersampler
 - SMOTEENN
 - Balanced Rando Forest Classifier
-- AdaBoost Classifier
-- Easy Ensample Classifier
+- Easy Ensample AdaBoost Classifier
+
 ### Data information and handling:
 - Data represents a loan application approval (high risk vs low risk)
 - High risk is greatly undersampled (N = 347) vs low risk (N = 684700
@@ -22,6 +23,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ## Results:
 ## Deliverable 1
+## Oversampling
 ### Naive Random Oversampler:
 (instances are randomly selected and added to the minority class)
 - Calculated accuracy_score is low (0.662) which means that the **Naive Random Oversampler** has only 66% accuracy.  To be considered good enough at predicting it should be at least 70% or higher.
@@ -41,3 +43,7 @@ IMAGE 3
 - Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.61).  This means that there is a good amount of predicted values that are incorrect).  For "low risk", precision is ideal at (1.0) and recall is 0.70. High scores for both show that the model is returning accurate results; however, with quite low accuracy_score of 66%.
 
 IMAGE 4
+
+## Undersampling
+### Cluster Centroids 
+(the opposite approach of oversampling)
