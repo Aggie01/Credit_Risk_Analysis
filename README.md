@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Overview:
-Use of credit card dataset from LendingClub lending company to evaluate machine learning models in loan risk prediction.  Credict risk deals with unbalanced risky loans (good loans are the majority).
+Use of credit card dataset from LendingClub lending company to evaluate machine learning models in loan risk prediction.  Credit risk deals with unbalanced risky loans (good loans are the majority).
 
 ## Purpose:
 Reduce bias of under/over group representation in order to evaluate model performance that would best predict credit risk. As a result, to predict if a loan application is worthy of approval or not.
@@ -28,17 +28,17 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Deliverable 1
 ## Oversampling
 ### Naive Random Oversampler:
-(instances are randomly selected and added to the minority class)
+(Instances are randomly selected and added to the minority class)
 - Calculated accuracy_score is low (0.662) which means that the **Naive Random Oversampler** has only 66% accuracy.  To be considered good enough at predicting it should be at least 70% or higher.
 
 ![](image%201.jpg)
 
-- Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.72).  This means that there is a good amount of false positives (most of its predicted values are incorrect).  For "low risk", precision is very high (1.0) and recall is 0.60. This high precision score indicates that the model returns accurate results but only at 66% accuracy (accuracy_score).
+- Classification Report: for "high risk" precision is very low (0.01) and recall is at acceptable level (0.72).  This means that there is a good number of false positives (most of its predicted values are incorrect).  For "low risk", precision is very high (1.0) and recall is 0.60. This high precision score indicates that the model returns accurate results but only at 66% accuracy (accuracy_score).
 
 ![](image%202.jpg)
 
 ### SMOTE: 
-(for an instance from the minority group, a number of its closest neighors is selected to create new instances)
+(For an instance from the minority group, a number of its closest neighbors is selected to create new instances)
 - Calculated **SMOTE** accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy.
 
 ![](image%203.jpg)
@@ -49,7 +49,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ## Undersampling
 ### Cluster Centroids: 
-(the opposite approach of oversampling. The majority class is undersampled down to the size of the minority)
+(The opposite approach of oversampling. The majority class is undersampled down to the size of the minority)
 - Calculated **Cluster Centroids** accuracy_score is low (0.656). It means that it's only 66% good at predicting accuracy
 
  ![](image%205.jpg)
@@ -60,7 +60,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 
 ## Deliverable 2
 ### Combination Sampling
-(it combines both sampling methods, over and under sampling. The minority group is oversampled but also each group's outliers are removed)
+(It combines both sampling methods, over and under sampling. The minority group is oversampled but also each group's outliers are removed)
 - Calculated **Combination Sampling** accuracy_score is low (0.544). It means that the Combination Sampling is only 54%  accurate
 
 ![](image%207.jpg)
@@ -72,7 +72,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ## Deliverable 3
 ##  Ensemble Learners
 ### Balanced Random Forest Classifier:
-(builds random subset of features)
+(Builds random subset of features)
 - Calculated **Random Forest Classifier** accuracy_score is quite high (0.788). It means that the Balanced Random Forest Classifier is 79% accurate
 
 ![](image%209.jpg)
@@ -82,7 +82,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ![](image%2010.jpg)
 
 ### AdaBoost Classifier:
-(it increases the weight of "weak" group)
+(It increases the weight of "weak" group)
 - Calculated **AdaBoost Classifier** accuracy_score is very high, 93%. 
 
 ![](/image%2011.jpg)
@@ -92,16 +92,17 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 ![](image%2012.jpg)
 
 ## Summary:
-- Overall, oversampling did not produce accurate and thrustworthy predictions.  Accuracy scores were below 70%. 
+- Overall, oversampling did not produce accurate and trustworthy predictions.  Accuracy scores were below 70%. 
 - The quality of a positive prediction made by the Naive Random Sampling for "low risk" group is at an ideal level, 100%.  It means that most of its predicted instances are correct when compared to the training ones; however, at low accuracy.
 - SMOTE oversampler produced low scores for "high risk" in both, precision and recall. It implies a poor prediction.
 - Overall, undersampling generated low acceptance score, below 70%. Also, low overall recall shows high level of false negatives.
 - Combination Sampling shows very poor accuracy, only 54%.
-- Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall.  For that reason it is recommended that AdaBoost is applied as it is successful at producing the most accurate results.
+- Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall.  For that reason, it is recommended that AdaBoost is applied as it is successful at producing the most accurate results.
 
 ## Further investigation:
 - With AdaBoost showing the most promising results, it is worth checking if "model overfitting" doesn't take place.
-- The best fitted model should be continuously updated to minimize any bias 
+- The best fitted model should be continuously updated to minimize any bias
+
 
 
 
