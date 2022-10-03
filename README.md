@@ -85,7 +85,7 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 (it increases the weight of "weak" group)
 - Calculated **AdaBoost Classifier**accuracy_score is very high, 93%. 
 
-![](image%2011.jpgg)
+![](/image%2011.jpg)
 
 - Classification Report: very high score for "low risk" for both, precision and recall.  High scores for both indicate that the classifier is returning accurate results (high precision), as well as it is returning a majority of all positive results (high recall).  For "high risk," there is high recall but low precision which means that most results that are returned are incorrect when compared to training set.
 
