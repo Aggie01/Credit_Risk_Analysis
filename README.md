@@ -98,8 +98,10 @@ Reduce bias of under/over group representation in order to evaluate model perfor
 - Overall, undersampling generated low acceptance score, below 70%. Also, low overall recall shows high level of false negatives.
 - Combination Sampling shows very poor accuracy, only 54%.
 - Ensemble Learners generated overall winning accuracy results, Random Forest 79% and AdaBoost impressive 93%.  AdaBoost produced very high on "low risk" group for both precision and recall.  For that reason it is recommended that AdaBoost is applied as it is successful at producing the most accurate results.
-- 
-- 
+
+## Further investigation:
+- With AdaBoost showing the most promising results, it is worth checking if "model overfitting" doesn't take place.
+- The best fitted model should be continuously updated to minimize any bias 
 
 
 
