@@ -4,7 +4,7 @@
 Use of credit card dataset from LendingClub lending company to evaluate machine learning models in loan risk prediction.  Credit risk deals with unbalanced risky loans (good loans are the majority).
 
 ## Purpose:
-Reduce bias of under/over group representation in order to evaluate model performance that would best predict credit risk. As a result, to predict if a loan application is worthy of approval or not.
+Reduce bias of under/over group representation in order to evaluate model performance that would best to predict credit risk. As a result, to predict if a loan application is worthy of approval or not.
 
 ## Methodology:
 ### Tools used:
